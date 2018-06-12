@@ -1,0 +1,389 @@
+@font-face{
+    font-family: "myfont";
+    src:url('../font/Lato-Regular.ttf') format('truetype');
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "myfont";
+}
+
+#imagefond{
+    background: url(../images/backgradiant.jpg) no-repeat center center fixed; 
+    background-size: cover;
+}
+
+.dropdown-menu{
+    background-color: transparent;
+    border: solid 2px #FEA347;
+}
+
+.dropdown-item{
+    background-color: transparent;
+    font-size: 1.2em;
+}
+
+.dropdown-item:hover{
+    background-color: transparent; 
+}
+
+a{
+    color: #FEA347!important;
+    transition:all 0.3s;
+}
+
+a:hover{
+    color: #fe4d46!important;
+}
+
+#couleurtext{
+    color: white !important;
+}
+
+.navbar-toggler{
+    background-color: #FEA347;
+}
+
+
+.taille_cara{
+    font-size: 1.4em;
+}
+
+
+#titre{
+    font-size: 2em;
+    text-align: center;
+    color: white;
+    margin: auto;
+    margin-top: 200px;
+}
+
+#trait{
+    border: 3px #FEA347 solid;
+    width: 475px;
+    margin-top: 30px;
+}
+
+.centrertext{
+    text-align: center;
+    font-size: 1.3em;
+    color: white;
+}
+
+.fab{
+    color: #FEA347;
+    transition:all 0.3s;
+}
+.fa-linkedin{
+    font-size: 3em;
+}
+
+a{
+    margin-right: 25px;
+}
+.far{
+    color: #FEA347; 
+    transition:all 0.3s;
+}
+
+.fa-file-pdf{
+    font-size: 3em;
+}
+
+.fa-home{
+    font-size: 1.5em;
+}
+
+#bouton{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    transition:all 0.3s;
+}
+
+.fab:hover{
+    color: #fe4d46;  
+}
+
+.far:hover{ 
+    color: #fe4d46;
+}
+
+.couleurnom{
+    color: #FEA347;
+}
+
+/*espace CESI*/
+
+.espace{
+    margin-top: 50px;
+}
+
+.textcesi{
+    text-align: justify;
+    font-size: 1.3em;
+    color: white;
+}
+
+.container-cesi{
+    display: flex;
+    justify-content: space-around;
+    height: 230px;
+    width: 1150px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.imagecesi{
+    margin-top: 20px;
+    transition:all 0.5s;
+}
+
+.imagecesi:hover{
+    opacity: 0.8;
+    box-shadow: 10px 10px 10px #FEA347;
+}
+
+#iconecesi{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.fa-calendar-alt{
+    font-size: 5em;
+    margin-left: 90px;
+    margin-bottom: 10px;
+}
+
+.fa-list-alt{
+    font-size: 5em;
+    margin-left: 70px;
+    margin-bottom: 10px;
+}
+
+.fa-university{
+    font-size: 5em;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+/*espace parcours*/
+
+.couleur{
+    color: white;
+}
+
+.date{
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.parcours{
+    display: flex;
+    justify-content: space-around;
+    height: 270px;
+    width: 1150px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.texteparcours{
+    text-align: justify;
+    font-size: 1.2em;
+    margin-top: 30px;
+}
+
+.entreprise{
+    font-size: 1.2em;
+    color: #FEA347;
+    margin-bottom: 5px;
+}
+
+.imageparcours{
+    margin-top: 60px;
+    margin-left: 100px;
+}
+
+.titreparcours{
+    font-size: 2.2em;
+    text-align: center;
+    color: #FEA347;
+    margin: auto;
+    margin-top: 70px;
+}
+
+.espacetitre{
+    margin-top: 180px;
+}
+
+#vendeur{
+    display: flex;
+    justify-content: space-around;
+    width: 1200px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.espacetexte{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#parcourcolonne{
+    flex-direction: column;
+    margin-left: 120px;
+    margin-top: 30px;
+}
+
+#imageleclerc{
+    margin-top: 10px;
+}
+
+#imageconfo{
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+/*Pour appliquer une border-radius il faut l'indiquer directement dans le lien de l'image*/
+.bordures{
+    border-radius: 15px;
+}
+
+.trait{
+    border: 3px #FEA347 solid;
+    width: 475px;
+    margin-top: 30px;
+}
+
+/*espace Projets :*/
+
+#titreprojet{
+    text-align: center;
+    margin-top: 160px;
+}
+
+.textprojet{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.3em;
+}
+
+#colonnesprojet{
+    text-align: center;
+    margin-top: 50px;
+    padding: 30px;
+}
+
+.ligne{
+    text-decoration: none !important;
+}
+
+.presentationprojet{
+    max-width: 100%;
+    border-radius: 8px; 
+    border: solid 5px #FEA347;
+    max-height: 100%;
+    transition:all 0.5s;
+}
+
+.presentationprojet:hover{
+    color: #fe4d46;
+    list-style-type: none !important;
+}
+
+.padding{
+    padding: 5px;
+}
+
+.fa-balance-scale{
+    font-size: 2em;
+    color: #FEA347;
+}
+.fa-sitemap{
+    font-size: 2em;
+    color: #FEA347;
+}
+.fa-server{
+    font-size: 2em;
+    color: #FEA347;
+}
+.fa-handshake{
+    font-size: 2em;
+    color: #FEA347;
+}
+.fa-file-code{
+    font-size: 2em;
+    color: #FEA347;
+}
+
+/*espace contact*/
+
+#imagecontact{
+    background: url(../images/backit2.jpg) no-repeat center center fixed; 
+    background-size: cover;
+}
+
+#titrecontact{
+    font-size: 2em;
+    text-align: center;
+    color: white;
+    margin: auto;
+    margin-top: 160px;
+}
+
+#contact{
+    margin-top: 50px;
+}
+
+.invalid-feedback{
+    font-size: 1.1em;
+}
+
+.boutonenvoie{
+    background-color: #FEA347;
+    border: none;
+}
+
+.boutonenvoie:hover{ 
+    background-color: #fe4d46;
+}
+
+.fixed-top.scrolled {
+    background-color: #333d3f !important;
+    transition: background-color 200ms linear;
+}
+
+.dropdown-menu.scrolled {
+    background-color: #333d3f !important;
+    transition: background-color 200ms linear;
+}
+
+/*espace media queries*/
+
+/*permet de mettre un fond sur la barre du menu*/
+@media (max-width:992px){
+    #mainNav
+    {background-color:#333d3f;}}
+
+/*permet de passer l'image CESI en dessous du texte*/
+@media (max-width:992px){
+    .container-cesi
+    {display: flex;
+     flex-direction: column;
+     margin-top: 13%;
+     margin-bottom: 15%;}
+}
+
+@media (max-width:992px){
+    #iconecesi
+    {font-size: 0.8em;}
+}
+
+/*@media (max-width:992px){
+    .container-centrer
+    {text-align: center !important;}
+}*/
+
