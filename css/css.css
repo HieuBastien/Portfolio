@@ -9,57 +9,73 @@ body{
     font-family: "myfont";
 }
 
-#imagefond{
+.imagefond{
     background: url(../images/backgradiant.jpg) no-repeat center center fixed; 
     background-size: cover;
 }
 
+/*espace général------------------*/
+
+/*Pour appliquer une border-radius il faut l'indiquer directement dans le lien de l'image*/
+.bordures{
+    border-radius: 15px;
+}
+
+/*pour supprimer le soulignage des liens*/
+.ligne{
+    text-decoration: none !important;
+}
+
+
+/*Espace menu---------------------*/
+
+/*modification de la class bootstrap du dropdown*/
 .dropdown-menu{
     background-color: transparent;
     border: solid 2px #FEA347;
 }
-
 .dropdown-item{
     background-color: transparent;
     font-size: 1.2em;
 }
-
 .dropdown-item:hover{
     background-color: transparent; 
 }
 
+/*Modification des balises a du menu et de l'accueil'*/
 a{
     color: #FEA347!important;
     transition:all 0.3s;
+    margin-right: 25px;
 }
-
 a:hover{
     color: #fe4d46!important;
 }
 
-#couleurtext{
-    color: white !important;
-}
-
+/*couleur du menu burger*/
 .navbar-toggler{
     background-color: #FEA347;
 }
 
-
+/*class pour augmenter la taille des titres et du bouton home du menu*/
 .taille_cara{
     font-size: 1.4em;
 }
+.fa-home{
+    font-size: 1.5em;
+}
 
+/*Menu accueil--------------------*/
 
-#titre{
+.titre{
     font-size: 2em;
     text-align: center;
-    color: white;
+    color: #FEA347;
     margin: auto;
     margin-top: 200px;
 }
 
-#trait{
+.trait{
     border: 3px #FEA347 solid;
     width: 475px;
     margin-top: 30px;
@@ -71,62 +87,87 @@ a:hover{
     color: white;
 }
 
-.fab{
+.couleurnom{
     color: #FEA347;
-    transition:all 0.3s;
-}
-.fa-linkedin{
-    font-size: 3em;
 }
 
-a{
-    margin-right: 25px;
-}
-.far{
-    color: #FEA347; 
-    transition:all 0.3s;
-}
-
-.fa-file-pdf{
-    font-size: 3em;
-}
-
-.fa-home{
-    font-size: 1.5em;
-}
-
-#bouton{
+#bouton-accueil{
     display: flex;
     justify-content: center;
     margin-top: 20px;
     transition:all 0.3s;
 }
 
+/*modification de la taille et du temps de survol des boutons link et pdf*/
+.fab .far{
+    transition:all 0.3s;
+}
+.far{
+    transition:all 0.3s;
+}
+.fa-linkedin{
+    font-size: 3em;
+}
+.fa-file-pdf{
+    font-size: 3em;
+}
+
+/*modification de la couleur des boutons au survol*/
 .fab:hover{
     color: #fe4d46;  
 }
-
 .far:hover{ 
     color: #fe4d46;
 }
 
-.couleurnom{
-    color: #FEA347;
-}
-
-/*espace CESI*/
+/*espace Presentation-------------*/
 
 .espace{
     margin-top: 50px;
 }
 
-.textcesi{
+.titre-presentation{
+    font-size: 2em;
+    text-align: center;
+    color: #FEA347;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.textpresentation{
     text-align: justify;
     font-size: 1.3em;
     color: white;
 }
 
-.container-cesi{
+.iconepresentation{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.li-espace{
+    margin-bottom: 5px;
+}
+
+/*espace delpeyrat----------------*/
+
+.fa-door-open{
+    font-size: 3em;
+    margin-left: 70px;
+    margin-bottom: 10px;
+}
+.fa-money-bill-alt{
+    font-size: 3em;
+    margin-left: 90px;
+    margin-bottom: 10px;
+}
+
+/*espace CESI---------------------*/
+
+/*conteneur d'une partie du texte de la page cesi*/
+#container-cesi{
     display: flex;
     justify-content: space-around;
     height: 230px;
@@ -136,51 +177,71 @@ a{
     margin-bottom: 20px;
 }
 
-.imagecesi{
+#imagecesi{
     margin-top: 20px;
     transition:all 0.5s;
 }
-
-.imagecesi:hover{
+#imagecesi:hover{
     opacity: 0.8;
     box-shadow: 10px 10px 10px #FEA347;
 }
 
-#iconecesi{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 50px;
-}
-
+/*mise en place des boutons de la page cesi*/
 .fa-calendar-alt{
     font-size: 5em;
-    margin-left: 90px;
+    margin-left: 30px;
     margin-bottom: 10px;
 }
-
 .fa-list-alt{
     font-size: 5em;
-    margin-left: 70px;
+    margin-left: 40px;
     margin-bottom: 10px;
 }
-
 .fa-university{
     font-size: 5em;
     margin-left: 30px;
     margin-bottom: 10px;
 }
-/*espace parcours*/
 
-.couleur{
+/*espace parcours-----------------*/
+
+.texteparcours{
+    text-align: justify;
+    font-size: 1.2em;
+    margin-top: 30px;
     color: white;
 }
-
 .date{
     font-size: 1.3em;
     text-align: center;
+    color: white;
 }
 
-.parcours{
+.titreparcours{
+    font-size: 2em;
+    text-align: center;
+    color: #FEA347;
+    margin: auto;
+    margin-top: 50px;
+}
+
+/*espace delpeyrat, l'image oblige a un leger changement des marges*/
+#container-parcours-delp{
+    display: flex;
+    justify-content: space-around;
+    height: 270px;
+    width: 1220px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+#imagedelp{
+    margin-left: 90px;
+    margin-top: 30px;
+}
+
+/*legerement different du container-cesi a cause de la taille de l'image*/
+.container-parcours{
     display: flex;
     justify-content: space-around;
     height: 270px;
@@ -190,36 +251,14 @@ a{
     margin-bottom: 20px;
 }
 
-.texteparcours{
-    text-align: justify;
-    font-size: 1.2em;
-    margin-top: 30px;
-}
-
+/*class utilisé pour les pôles cesi et pour les noms d'entreprises du parcours*/
 .entreprise{
     font-size: 1.2em;
     color: #FEA347;
     margin-bottom: 5px;
 }
 
-.imageparcours{
-    margin-top: 60px;
-    margin-left: 100px;
-}
-
-.titreparcours{
-    font-size: 2.2em;
-    text-align: center;
-    color: #FEA347;
-    margin: auto;
-    margin-top: 70px;
-}
-
-.espacetitre{
-    margin-top: 180px;
-}
-
-#vendeur{
+#container-vendeur{
     display: flex;
     justify-content: space-around;
     width: 1200px;
@@ -227,49 +266,31 @@ a{
     margin-top: 30px;
 }
 
-.espacetexte{
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
+/*espace image du niveau vendeur*/
 #parcourcolonne{
     flex-direction: column;
+    margin-left: 120px;
+    margin-top: 20px;
+}
+#imageleclerc{
+    margin-bottom: 40px;
+}
+#imageconfo{
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+/*espace image du reste du parcours*/
+#imagedarty{
+    margin-left: 120px;
+    margin-top: 30px;
+}
+#imagepizza{
     margin-left: 120px;
     margin-top: 30px;
 }
 
-#imageleclerc{
-    margin-top: 10px;
-}
-
-#imageconfo{
-    margin-bottom: 40px;
-    margin-top: 40px;
-}
-
-/*Pour appliquer une border-radius il faut l'indiquer directement dans le lien de l'image*/
-.bordures{
-    border-radius: 15px;
-}
-
-.trait{
-    border: 3px #FEA347 solid;
-    width: 475px;
-    margin-top: 30px;
-}
-
-/*espace Projets :*/
-
-#titreprojet{
-    text-align: center;
-    margin-top: 160px;
-}
-
-.textprojet{
-    text-align: center;
-    margin-top: 30px;
-    font-size: 1.3em;
-}
+/*espace Projets :--------------------*/
 
 #colonnesprojet{
     text-align: center;
@@ -277,25 +298,19 @@ a{
     padding: 30px;
 }
 
-.ligne{
-    text-decoration: none !important;
-}
-
+/*applicable sur chaque projet pour faire des espaces séparés*/
 .presentationprojet{
     max-width: 100%;
     border-radius: 8px; 
     border: solid 5px #FEA347;
     max-height: 100%;
     transition:all 0.5s;
+    padding: 5px;
 }
 
 .presentationprojet:hover{
     color: #fe4d46;
     list-style-type: none !important;
-}
-
-.padding{
-    padding: 5px;
 }
 
 .fa-balance-scale{
@@ -319,17 +334,18 @@ a{
     color: #FEA347;
 }
 
-/*espace contact*/
+/*espace contact-------------------------------*/
 
 #imagecontact{
     background: url(../images/backit2.jpg) no-repeat center center fixed; 
     background-size: cover;
 }
 
-#titrecontact{
+/*differente margin top pour le titre contact*/
+#titre-contact{
     font-size: 2em;
     text-align: center;
-    color: white;
+    color: #FEA347;
     margin: auto;
     margin-top: 160px;
 }
@@ -346,16 +362,18 @@ a{
     background-color: #FEA347;
     border: none;
 }
-
 .boutonenvoie:hover{ 
     background-color: #fe4d46;
 }
 
+
+/*permet de mettre un fond sur le menu en srcollant*/
 .fixed-top.scrolled {
     background-color: #333d3f !important;
     transition: background-color 200ms linear;
 }
 
+/*permet de mettre un fond sur le menu dropdown*/
 .dropdown-menu.scrolled {
     background-color: #333d3f !important;
     transition: background-color 200ms linear;
@@ -370,20 +388,22 @@ a{
 
 /*permet de passer l'image CESI en dessous du texte*/
 @media (max-width:992px){
-    .container-cesi
+    #container-cesi
     {display: flex;
      flex-direction: column;
      margin-top: 13%;
      margin-bottom: 15%;}
 }
 
+/*permet de garder les icones au dessus du texte*/
 @media (max-width:992px){
     #iconecesi
     {font-size: 0.8em;}
 }
 
-/*@media (max-width:992px){
+/*permet de centrer l'ensemble du texte*/
+@media (max-width:992px){
     .container-centrer
-    {text-align: center !important;}
-}*/
+    {margin-left: 38%}
+}
 

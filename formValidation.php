@@ -7,7 +7,7 @@ $sujet = "Mon formulaire de contact";
 $formNom = $_POST["nom"];
 $formTelephone = $_POST["telephone"];
 $formEmail = $_POST["mail"];
-$formMessage = INPUT_POST["message"];
+$formMessage = $_POST["message"];
 
 //Construction du message
 $html_message = "<div>".$formNom."</div>";

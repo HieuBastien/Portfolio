@@ -3,6 +3,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <link rel="icon" type="image/png" href="../portfolio/images/favicon-256.png" />
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
@@ -12,35 +13,44 @@
         <title>Portfolio</title>
     </head>
 
-    <body id="imagefond">
+    <!--class qui permet d'intégrer l'image en backgroud-->
+    <body class="imagefond">
+        
+        <!--class bootstrap qui permet de rendre la page responsive-->
         <div class="container">
 
-            <section id="couleur">
-                <nav class="navbar navbar-expand-lg navbar-light fixed-top fondmenu" id="mainNav">
+            <section>
+                <!--menu fixé en haut de page même en scrollant-->
+                <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
                     <div class="container">
+                        
+                        <!--Bouton home sur le côté gauche du menu-->
                         <a class="navbar-brand js-scroll-trigger" href="accueil.php">
                             <i class="fas fa-home"></i>
                         </a>
+                        <!--menu burger lorsque le site est consulté sur petit écran-->
                         <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <div class="collapse navbar-collapse" id="navbarResponsive">
-                            <ul class="navbar-nav ml-auto">
-                                <li class="nav-item textmenu dropdown">
-                                    <a class="nav-link js-scroll-trigger taille_cara dropdown-toggle" href="accueil.php" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Présentation</a>                            
+                        
+                        <div class="collapse navbar-collapse taille_cara" id="navbarResponsive">
+                            <ul class="navbar-nav ml-auto">                                
+                                <!--Menu dropdown permettant de présenter un menu deroulant-->
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link js-scroll-trigger dropdown-toggle" href="accueil.php" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Présentation</a>                            
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                         <a class="dropdown-item" href="Delpeyrat.php">Delpeyrat</a>
                                         <a class="dropdown-item" href="CESI.php">CESI</a>
                                     </div>
                                 </li>  
-                                <li class="nav-item,textmenu">
-                                    <a class="nav-link js-scroll-trigger taille_cara" href="parcours professionnel.php">Parcours</a>
+                                <li class="nav-item">
+                                    <a class="nav-link js-scroll-trigger" href="parcours professionnel.php">Parcours</a>
                                 </li>
-                                <li class="nav-item,textmenu">
-                                    <a class="nav-link js-scroll-trigger taille_cara" href="projets.php">Projets</a>
+                                <li class="nav-item">
+                                    <a class="nav-link js-scroll-trigger" href="projets.php">Projets</a>
                                 </li>
-                                <li class="nav-item,textmenu">
-                                    <a class="nav-link js-scroll-trigger taille_cara" href="contact.php">Contact</a>
+                                <li class="nav-item">
+                                    <a class="nav-link js-scroll-trigger" href="contact.php">Contact</a>
                                 </li>
 
                             </ul>
@@ -50,13 +60,14 @@
 
             </section>
 
-            <section>
+            <section class="texteparcours">
+                
+                <!--utilisation du titre pour ajuster le reste de la page-->
+                <h1 class="titre">Support Technique</h1>
+                <div class="date">2016-2018</div>
 
-                <h1 class="titreparcours espacetitre">Support Technique</h1>
-                <div class="date couleur">2016-2018</div>
-
-                <div class="parcours couleur">
-                    <div class="texteparcours couleur">
+                <div id="container-parcours-delp">
+                    <div>
                         <span class="entreprise">Delpeyrat</span> - Mont de Marsan
                         <br>
                         Prise d’appels et gestion des tickets via GLPI : qualification et résolution des incidents de niveau 1 et 2.
@@ -64,10 +75,12 @@
                         mise en place de nouveaux utilisateurs, masterisation, 
                         maintenance matériel et logiciel, administration réseau.
                         <br>
+                        <br>
                         Missions en entreprise : création d’une machine virtuelle Linux et installation OCS, 
                         mise en place d’une nouvelle politique de gestion des droits NTFS.
-                    </div>               
-                    <div class="imageparcours">
+                    </div>    
+                    <!--adapter la position de l'image-->
+                    <div id="imagedelp">
                         <img src="images/delp.png" width="250" alt=""/>
                     </div>
                 </div>
@@ -75,10 +88,10 @@
                 <hr class="trait">
 
                 <h1 class="titreparcours">Vendeur</h1>
-                <div class="date couleur">2015-2016</div>
+                <div class="date">2015-2016</div>
 
-                <div class="couleur" id="vendeur">
-                    <div class="texteparcours couleur">
+                <div id="container-vendeur">
+                    <div>
                         <span class="entreprise">Leclerc</span> - Mont de Marsan
                         <br>
                         <p>
@@ -122,21 +135,20 @@
                 </div>
 
                 <hr class="trait">
-
                 <h1 class="titreparcours">Conseiller pôle service</h1>
-                <div class="date couleur">2014-2015</div>
+                <div class="date">2014-2015</div>
 
-                <div class="parcours couleur">
-                    <div class="texteparcours couleur">
+                <div class="container-parcours">
+                    <div>
                         <span class="entreprise">Darty</span> - Rennes
                         <br>
                         En tant que conseiller pôle service, mes missions étaient multiples :
                         <ul>
-                            <li>
+                            <li class="li-espace">
                                 Gérer le service après vente, ce qui comprend le suivi des réclamations clients
                                 ainsi que le suivi des produits clients.
                             </li>
-                            <li>
+                            <li class="li-espace">
                                 Gestion de la caisse et des financements proposé par Darty.
                             </li>
                             <li>
@@ -144,18 +156,17 @@
                             </li>
                         </ul>
                     </div>               
-                    <div class="imageparcours">
+                    <div id="imagedarty">
                         <img class="bordures" src="images/darty.png" width="150" alt=""/>
                     </div>
                 </div>
 
                 <hr class="trait">
-
                 <h1 class="titreparcours">Manager</h1>
-                <div class="date couleur">2012-2014</div>
+                <div class="date">2012-2014</div>
 
-                <div class="parcours couleur">
-                    <div class="texteparcours couleur">
+                <div class="container-parcours">
+                    <div>
                         <span class="entreprise">Pizza in Box</span> - Rennes
                         <p>
                             J'ai été engagé en tant que co-manager pour l'une des trois boutiques Pizza in Box de rennes.
@@ -167,7 +178,7 @@
                             Notre mission était aussi de gérer les problèmes qui pouvaient survenir occasionnellement.                                                      
                         </p>
                     </div>               
-                    <div class="imageparcours">
+                    <div id="imagepizza">
                         <img class="bordures" src="images/pizzabox.jpg" width="150" alt=""/>
                     </div>
                 </div>
